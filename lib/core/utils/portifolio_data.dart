@@ -15,11 +15,12 @@ class PortifolioData {
       'I\'m a motivated and detail-oriented Flutter Developer with a solid foundation in mobile app development, object-oriented programming, and problem-solving. Recently graduated with a B.Tech in Information Technology from the University of Zagazig.';
 
   // User Contacts
-  static const linkedIn = 'https://www.linkedin.com/in/mohammed-ashraf19/';
+  static const linkedIn =
+      'https://www.linkedin.com/in/mohammed-ashraf-928619393';
   static const gitHub = 'https://github.com/MohammedAshraf19';
   static const gmail = 'mohamedasharf55@gmail.com';
   static const resume =
-      'https://drive.google.com/file/d/1Jg-56hWX0KM3hakm4GEZJTvMwNwYGWxh/view?usp=sharing';
+      'https://drive.google.com/file/d/1BJ8IyYkpW-bW1ep5ifA6UkZqcXWOwyqI/view?usp=sharing';
 
   // User Skills
   static final List<SkillItemModel> skills = [
