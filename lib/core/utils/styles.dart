@@ -57,6 +57,18 @@ class TextStyles {
     color: AppColors.white,
     fontWeight: FontWeightHelper.medium,
   );
+  static const font15WhiteColorSemiBold = TextStyle(
+    fontFamily: 'Poppins',
+    fontSize: 15,
+    color: AppColors.white,
+    fontWeight: FontWeightHelper.semiBold,
+  );
+  static const font12WhiteColorSemiBold = TextStyle(
+    fontFamily: 'Poppins',
+    fontSize: 12,
+    color: AppColors.white,
+    fontWeight: FontWeightHelper.semiBold,
+  );
   static const font16LightGreyColorSemiMedium = TextStyle(
     fontFamily: 'Poppins',
     fontSize: 16,
