@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:insta_image_viewer/insta_image_viewer.dart';
-import 'package:portfolio/core/utils/image.dart';
 import 'package:portfolio/core/utils/styles.dart';
+import 'package:portfolio/features/experience/models/experience_item_model.dart';
 
 class ExperienceItemLeftSection extends StatelessWidget {
-  const ExperienceItemLeftSection({super.key});
-
+  const ExperienceItemLeftSection({super.key, required this.myExperience});
+  final ExperienceItemModel myExperience;
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -13,12 +13,12 @@ class ExperienceItemLeftSection extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          const Text(
-            'Flutter Developer Intern - KAMN',
+          Text(
+            '${myExperience.jobTitle} - ${myExperience.companyName}',
             style: TextStyles.font16WhiteColorMedium,
           ),
           Text(
-            'Nov 2024 - Feb 2025\nRemotly',
+            '${myExperience.duration}\n${myExperience.location}',
             style: TextStyles.font15WhiteColorSemiBold.copyWith(
                 color: Colors.white.withValues(alpha: 0.5), fontSize: 12),
           ),
@@ -33,11 +33,11 @@ class ExperienceItemLeftSection extends StatelessWidget {
                   crossAxisSpacing: 10.0,
                   mainAxisSpacing: 10.0,
                 ),
-                itemCount: 3,
+                itemCount: myExperience.photo!.length,
                 itemBuilder: (context, index) {
                   return InstaImageViewer(
                     child: Image.asset(
-                      ImageLinks.bookApp,
+                      myExperience.photo![index],
                     ),
                   );
                 }),

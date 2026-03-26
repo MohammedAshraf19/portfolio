@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio/core/utils/colors.dart';
-
+import 'package:portfolio/core/utils/portifolio_data.dart';
 import 'package:portfolio/features/experience/presentation/widgets/experience_item.dart';
 
 class WebExperienceScreen extends StatelessWidget {
@@ -12,8 +12,11 @@ class WebExperienceScreen extends StatelessWidget {
       backgroundColor: AppColors.backgroundColor,
       body: SafeArea(
         child: ListView.builder(
-            itemBuilder: (context, index) => const ExperienceItem(),
-            itemCount: 3),
+            itemBuilder: (context, index) => ExperienceItem(
+                  myExperience: PortifolioData.experienceItems[index],
+                  index: index,
+                ),
+            itemCount: PortifolioData.experienceItems.length),
       ),
     );
   }

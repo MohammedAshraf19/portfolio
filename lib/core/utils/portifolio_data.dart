@@ -1,6 +1,7 @@
 import 'package:portfolio/core/utils/icons.dart';
 import 'package:portfolio/core/utils/image.dart';
 import 'package:portfolio/features/about/models/skill_item_model.dart';
+import 'package:portfolio/features/experience/models/experience_item_model.dart';
 import 'package:portfolio/features/projects/models/project_model.dart';
 
 class PortifolioData {
@@ -84,5 +85,39 @@ class PortifolioData {
         descriptio:
             'A social app enabling users to register, log in, create posts, and chat. It supports dark/light mode, uses Cubit for state management, Firebase for authentication, and Lottie for animations.',
         tools: ['Firebase', 'Cubit', 'Animation']),
+  ];
+
+  static final List<ExperienceItemModel> experienceItems = [
+    ExperienceItemModel(
+        description:
+            '- Taught Programming to students aged 10–17, improving logical thinking and problem-solving skills.\n- Designed structured learning materials, coding exercises, and assessments.\n- Mentored teams in national and international competitions using Flutter and Python.\n- Led technical direction, system design, and implementation guidance./n- Achieved 1st place (Afro-Asian Software Competition) among 20+ teams.\n- Achieved 1st place (Technoxian Competition) among 30+ teams.',
+        jobTitle: 'Programming Instructor & Mentor',
+        companyName: 'Bright Brain Academy',
+        duration: 'Feb 2026-Present\nAug 2024-Mar 2025',
+        location: '10th of Ramadan, Egypt',
+        companyLogo: ImageLinks.academyLogo,
+        photo: const [
+          ImageLinks.academy1,
+          ImageLinks.academy2,
+          ImageLinks.academy3
+        ]),
+    ExperienceItemModel(
+        description:
+            '- Built 7+ Flutter screens (auth & booking).\n- Integrated Firebase services.\n- Applied Clean Architecture and SOLID Principles.\n- Developed responsive UI.\n- Worked on payment flows.',
+        jobTitle: 'Flutter Developer Intern',
+        companyName: 'KAMN',
+        duration: 'Nov 2024 - Mar 2025',
+        location: 'Remotly',
+        companyLogo: ImageLinks.kamnLogo,
+        photo: []),
+    ExperienceItemModel(
+        description:
+            '- Designed a full curriculum covering Dart, OOP, Flutter, and problem-solving.\n- Trained and mentored 6+ members in building Flutter apps with APIs, Firebase, and local storage.\n- Led technical workshops on advanced Flutter concepts and real-world applications.\n- Achieved 90% completion rate, increasing engagement and practical skills.',
+        jobTitle: 'Head of Mobile App Track',
+        companyName: 'IEEE-ZSB',
+        duration: 'Nov 2022 - Nov 2023',
+        location: 'Hybrid',
+        companyLogo: ImageLinks.ieeeLogo,
+        photo: [ImageLinks.ieee]),
   ];
 }
