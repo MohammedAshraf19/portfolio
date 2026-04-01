@@ -1,48 +1,37 @@
 import 'package:flutter/material.dart';
-import 'package:insta_image_viewer/insta_image_viewer.dart';
-import 'package:portfolio/core/utils/image.dart';
 import 'package:portfolio/core/utils/styles.dart';
+import 'package:portfolio/features/experience/models/experience_item_model.dart';
 
 class ExperienceItemLeftSection extends StatelessWidget {
-  const ExperienceItemLeftSection({super.key});
-
+  const ExperienceItemLeftSection({super.key, required this.myExperience});
+  final ExperienceItemModel myExperience;
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.only(left: 15, top: 200),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          const Text(
-            'Flutter Developer Intern - KAMN',
-            style: TextStyles.font16WhiteColorMedium,
-          ),
-          Text(
-            'Nov 2024 - Feb 2025\nRemotly',
-            style: TextStyles.font15WhiteColorSemiBold.copyWith(
-                color: Colors.white.withValues(alpha: 0.5), fontSize: 12),
-          ),
-          const SizedBox(
-            height: 20,
-          ),
-          SizedBox(
-            height: 300,
-            child: GridView.builder(
-                gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                  crossAxisCount: 3,
-                  crossAxisSpacing: 10.0,
-                  mainAxisSpacing: 10.0,
+    return Align(
+      alignment: Alignment.centerLeft,
+      child: Padding(
+        padding: EdgeInsets.only(
+            top: MediaQuery.sizeOf(context).width > 800 ? 150 : 100),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Text('${myExperience.jobTitle} - ${myExperience.companyName}',
+                style: TextStyles.font18WhiteColorSemiBold
+                // style: TextStyles.font16WhiteColorMedium,
                 ),
-                itemCount: 3,
-                itemBuilder: (context, index) {
-                  return InstaImageViewer(
-                    child: Image.asset(
-                      ImageLinks.bookApp,
-                    ),
-                  );
-                }),
-          )
-        ],
+            Text(
+              '${myExperience.duration}\n${myExperience.location}',
+              style: TextStyles.font15WhiteColorSemiBold.copyWith(
+                  color: Colors.white.withValues(alpha: 0.5), fontSize: 15),
+            ),
+            const SizedBox(
+              height: 20,
+            ),
+            Text(myExperience.description!,
+                style: TextStyles.font18WhiteColorRegular),
+          ],
+        ),
       ),
     );
   }

@@ -5,6 +5,7 @@ import 'package:portfolio/core/utils/image.dart';
 
 import 'package:portfolio/features/about/presentation/screens/about_mobile_screen.dart';
 import 'package:portfolio/features/contacts/presentation/screens/contact_web_sreeen.dart';
+import 'package:portfolio/features/experience/presentation/screens/web_experience_screen.dart';
 import 'package:portfolio/features/home/presentation/screens/home_mobile_screen.dart';
 import 'package:portfolio/features/projects/presentation/screens/projects_mobile_screen.dart';
 
@@ -28,6 +29,10 @@ class MobileLayout extends StatelessWidget {
             const AboutMobileScreen(),
             const SizedBox(
               height: 100,
+            ),
+            const WebExperienceScreen(),
+            const SizedBox(
+              height: 30,
             ),
             const ProjectsMobileScreen(),
             const SizedBox(
