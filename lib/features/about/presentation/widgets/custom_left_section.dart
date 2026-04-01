@@ -26,7 +26,7 @@ class CustomLeftSection extends StatelessWidget {
         ),
         const Text(
           PortifolioData.about,
-          maxLines: 10,
+          maxLines: 20,
           overflow: TextOverflow.ellipsis,
           style: TextStyles.font22WhiteColorRegular,
         ),

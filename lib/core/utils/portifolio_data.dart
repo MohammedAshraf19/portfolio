@@ -7,14 +7,13 @@ import 'package:portfolio/features/projects/models/project_model.dart';
 class PortifolioData {
   // User Data
   static const name = 'Mohammed Ashraf';
-  static const jobTitle = 'Flutter Developer';
+  static const jobTitle = 'Mobile App Developer';
   static const description =
-      'I\'m a dedicated Flutter Developer passionate about building innovative, visually stunning, and highly functional mobile apps. With a blend of creativity, technical expertise, and a user-centered approach, I transform ideas into seamless digital experiences';
+      'I build real-world mobile applications using Flutter, focusing on clean architecture, performance, and scalable systems.';
   static const contactDescription =
       'I\'m always open to new opportunities and collaborations.\nIf you have a project in mind or just want to connect, feel free to reach out to me!';
   static const about =
-      'I\'m a motivated and detail-oriented Flutter Developer with a solid foundation in mobile app development, object-oriented programming, and problem-solving. Recently graduated with a B.Tech in Information Technology from the University of Zagazig.';
-
+      'My journey into software engineering started with a simple goal: building applications that solve real-world problems.I chose mobile development because I enjoy turning ideas into real products. As a Flutter Developer, I build complete mobile apps—from clean UI to scalable architecture and API integration.I’ve worked on projects involving mobile sensors, real-time features, background services, and machine learning, which shaped my focus on building reliable systems.Alongside development, I mentor and teach programming, leading teams in competitions and helping them achieve 1st place through structured problem-solving and technical guidance.';
   // User Contacts
   static const linkedIn =
       'https://www.linkedin.com/in/mohammed-ashraf-928619393';
