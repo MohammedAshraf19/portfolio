@@ -13,11 +13,7 @@ class ImageLinks {
   static const social = '$imageLink/social.jpeg';
   // Experience Images
   static const academyLogo = '$imageLink/academy.jpeg';
-  static const academy1 = '$imageLink/academy_1.jpg';
-  static const academy2 = '$imageLink/academy_2.jpg';
-  static const academy3 = '$imageLink/academy_3.jpeg';
 
   static const kamnLogo = '$imageLink/KAMN.jpeg';
   static const ieeeLogo = '$imageLink/IEEE.jpeg';
-  static const ieee = '$imageLink/IEEE_1.jpg';
 }

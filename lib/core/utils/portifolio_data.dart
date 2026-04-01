@@ -96,11 +96,7 @@ class PortifolioData {
         duration: 'Feb 2026-Present\nAug 2024-Mar 2025',
         location: '10th of Ramadan, Egypt',
         companyLogo: ImageLinks.academyLogo,
-        photo: const [
-          ImageLinks.academy1,
-          ImageLinks.academy2,
-          ImageLinks.academy3
-        ]),
+        photo: const []),
     ExperienceItemModel(
         description:
             '- Built 7+ Flutter screens (auth & booking).\n- Integrated Firebase services.\n- Applied Clean Architecture and SOLID Principles.\n- Developed responsive UI.\n- Worked on payment flows.',
@@ -118,6 +114,6 @@ class PortifolioData {
         duration: 'Nov 2022 - Nov 2023',
         location: 'Hybrid',
         companyLogo: ImageLinks.ieeeLogo,
-        photo: [ImageLinks.ieee]),
+        photo: []),
   ];
 }
