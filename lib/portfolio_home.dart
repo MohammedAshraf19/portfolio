@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio/features/experience/presentation/screens/web_experience_screen.dart';
 import 'package:portfolio/features/layouts/mobile_layout.dart';
 import 'package:portfolio/core/widgets/adaptive_platform.dart';
+import 'package:portfolio/features/layouts/web_layout.dart';
 
 class PortfolioHome extends StatelessWidget {
   const PortfolioHome({super.key});
@@ -9,7 +9,8 @@ class PortfolioHome extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return AdaptiveLayout(
-        mobileLayout: (context) => const MobileLayout(),
-        webLayout: (context) => const WebExperienceScreen()); //WebLayout());
+      mobileLayout: (context) => const MobileLayout(),
+      webLayout: (context) => WebLayout(), //
+    );
   }
 }

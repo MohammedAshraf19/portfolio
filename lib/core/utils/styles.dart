@@ -93,4 +93,17 @@ class TextStyles {
     color: AppColors.secondColor,
     fontWeight: FontWeightHelper.bold,
   );
+
+  static const font18WhiteColorSemiBold = TextStyle(
+    fontFamily: 'Poppins',
+    fontSize: 18,
+    color: AppColors.white,
+    fontWeight: FontWeightHelper.semiBold,
+  );
+  static const font18WhiteColorRegular = TextStyle(
+    fontFamily: 'Poppins',
+    fontSize: 18,
+    color: AppColors.lightGrayColor,
+    fontWeight: FontWeightHelper.regular,
+  );
 }
