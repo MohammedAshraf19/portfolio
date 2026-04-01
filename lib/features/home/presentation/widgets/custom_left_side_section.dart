@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio/core/utils/sections_key.dart';
 import 'package:portfolio/features/home/presentation/widgets/custom_home_button.dart';
 import 'package:portfolio/features/home/presentation/widgets/custom_home_title.dart';
 
@@ -17,10 +18,10 @@ class CustomLeftSideSection extends StatelessWidget {
           ),
           CustomHomeButton(
             onTap: () {
-              scrollController.animateTo(
-                2 * MediaQuery.sizeOf(context).height,
-                duration: const Duration(milliseconds: 1000),
-                curve: Curves.easeInOutSine,
+              Scrollable.ensureVisible(
+                SectionsKey.projectsKey.currentContext!,
+                duration: const Duration(milliseconds: 600),
+                curve: Curves.easeInOut,
               );
             },
           )

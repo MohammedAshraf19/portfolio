@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio/core/utils/colors.dart';
+import 'package:portfolio/core/utils/sections_key.dart';
 import 'package:portfolio/features/about/presentation/screens/about_web_screen.dart';
 import 'package:portfolio/features/contacts/presentation/screens/contact_web_sreeen.dart';
 import 'package:portfolio/core/widgets/custom_app_bar.dart';
@@ -18,22 +19,26 @@ class WebLayout extends StatelessWidget {
       body: Stack(
         children: [
           SingleChildScrollView(
-            controller: _scrollController,
             child: Column(
               children: [
                 HomeWebScreen(
+                  key: SectionsKey.homeKey,
                   scrollController: _scrollController,
                 ),
-                const AboutWebScreen(),
-                const WebExperienceScreen(),
-                const ProjectsWebScreen(),
-                const ContactWebSreeen(),
+                AboutWebScreen(key: SectionsKey.aboutKey),
+                WebExperienceScreen(
+                  key: SectionsKey.experienceKey,
+                ),
+                ProjectsWebScreen(
+                  key: SectionsKey.projectsKey,
+                ),
+                ContactWebSreeen(
+                  key: SectionsKey.contactKey,
+                ),
               ],
             ),
           ),
-          CustomAppBar(
-            scrollController: _scrollController,
-          )
+          CustomAppBar()
         ],
       ),
     );

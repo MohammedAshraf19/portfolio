@@ -1,11 +1,24 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio/core/utils/sections_key.dart';
 import 'package:portfolio/core/utils/styles.dart';
 import 'package:portfolio/core/widgets/custom_resume_button.dart';
 
 class CustomAppBar extends StatelessWidget {
-  const CustomAppBar({super.key, required this.scrollController});
-  final ScrollController scrollController;
-  static const sections = ['Home', 'About', 'Projects', 'Contacts'];
+  const CustomAppBar({super.key});
+  static const sections = [
+    'Home',
+    'About',
+    'Experience',
+    'Projects',
+    'Contacts'
+  ];
+  static final sectionsKeys = [
+    SectionsKey.homeKey,
+    SectionsKey.aboutKey,
+    SectionsKey.experienceKey,
+    SectionsKey.projectsKey,
+    SectionsKey.contactKey,
+  ];
   @override
   Widget build(BuildContext context) {
     return MediaQuery.sizeOf(context).height > 300
@@ -23,10 +36,11 @@ class CustomAppBar extends StatelessWidget {
                 MediaQuery.sizeOf(context).width > 1200
                     ? SizedBox(
                         height: 50,
-                        width: 390,
+                        width: 550,
                         child: ListView.builder(
                           itemBuilder: (context, index) => TextButton(
-                            onPressed: () => _scrollToSection(index, context),
+                            onPressed: () =>
+                                _scrollToSection(sectionsKeys[index]),
                             child: Text(
                               sections[index],
                               style: TextStyles.font20WhiteColorThin,
@@ -47,11 +61,13 @@ class CustomAppBar extends StatelessWidget {
         : Container();
   }
 
-  void _scrollToSection(int index, context) {
-    scrollController.animateTo(
-      index * MediaQuery.sizeOf(context).height,
-      duration: const Duration(milliseconds: 1000),
-      curve: Curves.easeInOutSine,
-    );
+  void _scrollToSection(GlobalKey key) {
+    if (key.currentContext != null) {
+      Scrollable.ensureVisible(
+        key.currentContext!,
+        duration: const Duration(milliseconds: 1000),
+        curve: Curves.easeInOut,
+      );
+    }
   }
 }
