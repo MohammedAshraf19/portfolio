@@ -19,7 +19,7 @@ class CustomContactsWay extends StatelessWidget {
               title: 'Linkedin',
               icon: IconLinks.linkedIn,
               onTap: () async {
-                final Uri url = Uri.parse(PortifolioData.linkedIn);
+                final Uri url = Uri.parse(PortfolioData.linkedIn);
                 await launchUrl(url);
               },
             ),
@@ -30,7 +30,7 @@ class CustomContactsWay extends StatelessWidget {
               title: 'GitHub',
               icon: IconLinks.gitHub,
               onTap: () async {
-                final Uri url = Uri.parse(PortifolioData.gitHub);
+                final Uri url = Uri.parse(PortfolioData.gitHub);
                 await launchUrl(url);
               },
             ),
@@ -43,7 +43,7 @@ class CustomContactsWay extends StatelessWidget {
               onTap: () async {
                 final Uri emailUri = Uri(
                   scheme: 'mailto',
-                  path: PortifolioData.gmail,
+                  path: PortfolioData.gmail,
                 );
                 await launchUrl(emailUri);
               },

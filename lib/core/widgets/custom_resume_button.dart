@@ -19,7 +19,7 @@ class CustomResumeButton extends StatelessWidget {
                 const RoundedRectangleBorder(borderRadius: BorderRadius.zero),
             backgroundColor: AppColors.transportColor),
         onPressed: () async {
-          final Uri url = Uri.parse(PortifolioData.resume);
+          final Uri url = Uri.parse(PortfolioData.resume);
           await launchUrl(url);
         },
         child: const Text(

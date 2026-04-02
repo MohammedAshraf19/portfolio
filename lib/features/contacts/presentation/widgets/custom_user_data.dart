@@ -10,15 +10,14 @@ class CustomUserData extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
-        const Text(PortifolioData.name,
-            style: TextStyles.font20SecondColorThin),
-        const Text(PortifolioData.jobTitle,
+        const Text(PortfolioData.name, style: TextStyles.font20SecondColorThin),
+        const Text(PortfolioData.jobTitle,
             style: TextStyles.font16WhiteColorMedium),
         const SizedBox(
           height: 5,
         ),
         Text(
-          PortifolioData.contactDescription,
+          PortfolioData.contactDescription,
           style: TextStyles.font16WhiteColorRegularWithOpactiy,
           textAlign: TextAlign.center,
         ),

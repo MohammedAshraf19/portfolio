@@ -38,7 +38,7 @@ class MobileLayout extends StatelessWidget {
             const SizedBox(
               height: 30,
             ),
-            const ContactWebSreeen(),
+            const ContactWebScreen(),
           ],
         ),
       )),

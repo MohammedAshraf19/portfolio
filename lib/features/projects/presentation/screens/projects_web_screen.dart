@@ -60,10 +60,9 @@ class _ProjectsWebScreenState extends State<ProjectsWebScreen> {
                     1 / 1.7, // Ensures square items (width:height ratio is 1:1)
                 physics: const NeverScrollableScrollPhysics(),
                 shrinkWrap: true,
-                children:
-                    List.generate(PortifolioData.projects.length, (index) {
+                children: List.generate(PortfolioData.projects.length, (index) {
                   return ProjectItem(
-                    projectModel: PortifolioData.projects[index],
+                    projectModel: PortfolioData.projects[index],
                   );
                 }),
               ),

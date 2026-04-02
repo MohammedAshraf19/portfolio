@@ -30,7 +30,7 @@ class WebLayout extends StatelessWidget {
                 ProjectsWebScreen(
                   key: SectionsKey.projectsKey,
                 ),
-                ContactWebSreeen(
+                ContactWebScreen(
                   key: SectionsKey.contactKey,
                 ),
               ],

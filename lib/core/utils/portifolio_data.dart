@@ -4,7 +4,7 @@ import 'package:portfolio/features/about/models/skill_item_model.dart';
 import 'package:portfolio/features/experience/models/experience_item_model.dart';
 import 'package:portfolio/features/projects/models/project_model.dart';
 
-class PortifolioData {
+class PortfolioData {
   // User Data
   static const name = 'Mohammed Ashraf';
   static const jobTitle = 'Mobile App Developer';

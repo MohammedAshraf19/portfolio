@@ -45,9 +45,9 @@ class _ProjectsMobileScreenState extends State<ProjectsMobileScreen> {
                 child: ListView.builder(
                   scrollDirection: Axis.horizontal,
                   itemBuilder: (context, index) => ProjectMobileItem(
-                    projectModel: PortifolioData.projects[index],
+                    projectModel: PortfolioData.projects[index],
                   ),
-                  itemCount: PortifolioData.projects.length,
+                  itemCount: PortfolioData.projects.length,
                 ),
               ),
             ],

@@ -43,7 +43,7 @@ class _CustomLeftSectionState extends State<CustomLeftSection> {
               height: 35,
             ),
             const Text(
-              PortifolioData.about,
+              PortfolioData.about,
               maxLines: 20,
               overflow: TextOverflow.ellipsis,
               style: TextStyles.font22WhiteColorRegular,

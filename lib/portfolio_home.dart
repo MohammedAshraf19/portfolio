@@ -10,7 +10,7 @@ class PortfolioHome extends StatelessWidget {
   Widget build(BuildContext context) {
     return AdaptiveLayout(
       mobileLayout: (context) => const MobileLayout(),
-      webLayout: (context) => WebLayout(), //
+      webLayout: (context) => const WebLayout(), //
     );
   }
 }

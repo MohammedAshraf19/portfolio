@@ -53,7 +53,7 @@ class _AutoScrollListViewState extends State<AutoScrollListView> {
 
   @override
   Widget build(BuildContext context) {
-    var skills = PortifolioData.skills;
+    var skills = PortfolioData.skills;
     return Container(
       color: AppColors.primayColor,
       child: ListView.builder(

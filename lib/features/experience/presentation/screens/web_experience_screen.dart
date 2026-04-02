@@ -54,10 +54,10 @@ class _WebExperienceScreenState extends State<WebExperienceScreen> {
                   physics: const NeverScrollableScrollPhysics(),
                   shrinkWrap: true,
                   itemBuilder: (context, index) => ExperienceItem(
-                        myExperience: PortifolioData.experienceItems[index],
+                        myExperience: PortfolioData.experienceItems[index],
                         index: index,
                       ),
-                  itemCount: PortifolioData.experienceItems.length),
+                  itemCount: PortfolioData.experienceItems.length),
             ),
           ),
         ),

@@ -15,14 +15,14 @@ class CustomHomeTitle extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           const Text(
-            'Hi, I\'m ${PortifolioData.name}',
+            'Hi, I\'m ${PortfolioData.name}',
             maxLines: 2,
             textAlign: TextAlign.center,
             overflow: TextOverflow.ellipsis,
             style: TextStyles.font30whiteColorSemiBold,
           ),
           const Text(
-            PortifolioData.jobTitle,
+            PortfolioData.jobTitle,
             style: TextStyles.font30SecondColorSemiBold,
           ),
           SizedBox(
@@ -32,12 +32,12 @@ class CustomHomeTitle extends StatelessWidget {
               ? SizedBox(
                   width: MediaQuery.sizeOf(context).width / 1.2,
                   child: const Text(
-                    PortifolioData.description,
+                    PortfolioData.description,
                     style: TextStyles.font16LightGreyColorSemiMedium,
                   ),
                 )
               : const Text(
-                  PortifolioData.description,
+                  PortfolioData.description,
                   style: TextStyles.font16LightGreyColorSemiMedium,
                 )
         ],
