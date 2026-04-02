@@ -39,6 +39,8 @@ dependencies:
   flutter_animate: ^4.5.2
   timeline_tile: ^2.0.0
   insta_image_viewer: ^1.0.4
+  animate_do: ^4.2.0
+  visibility_detector: ^0.4.0+2
 
 dev_dependencies:
   flutter_lints: ^4.0.0

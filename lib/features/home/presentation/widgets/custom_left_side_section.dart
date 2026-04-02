@@ -4,8 +4,7 @@ import 'package:portfolio/features/home/presentation/widgets/custom_home_button.
 import 'package:portfolio/features/home/presentation/widgets/custom_home_title.dart';
 
 class CustomLeftSideSection extends StatelessWidget {
-  const CustomLeftSideSection({super.key, required this.scrollController});
-  final ScrollController scrollController;
+  const CustomLeftSideSection({super.key});
   @override
   Widget build(BuildContext context) {
     return SizedBox(

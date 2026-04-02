@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
 import 'package:portfolio/core/utils/image.dart';
-
 import 'package:portfolio/features/about/presentation/widgets/cusom_skill.dart';
 import 'package:portfolio/features/about/presentation/widgets/custom_left_section.dart';
 

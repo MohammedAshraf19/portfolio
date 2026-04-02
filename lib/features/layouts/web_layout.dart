@@ -9,8 +9,7 @@ import 'package:portfolio/features/home/presentation/screens/home_web_screen.dar
 import 'package:portfolio/features/projects/presentation/screens/projects_web_screen.dart';
 
 class WebLayout extends StatelessWidget {
-  WebLayout({super.key});
-  final ScrollController _scrollController = ScrollController();
+  const WebLayout({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -23,7 +22,6 @@ class WebLayout extends StatelessWidget {
               children: [
                 HomeWebScreen(
                   key: SectionsKey.homeKey,
-                  scrollController: _scrollController,
                 ),
                 AboutWebScreen(key: SectionsKey.aboutKey),
                 WebExperienceScreen(
@@ -38,7 +36,7 @@ class WebLayout extends StatelessWidget {
               ],
             ),
           ),
-          CustomAppBar()
+          const CustomAppBar()
         ],
       ),
     );

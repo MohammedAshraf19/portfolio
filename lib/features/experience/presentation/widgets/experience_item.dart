@@ -1,7 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:insta_image_viewer/insta_image_viewer.dart';
-import 'package:portfolio/core/utils/colors.dart';
-import 'package:portfolio/core/utils/styles.dart';
 import 'package:portfolio/features/experience/models/experience_item_model.dart';
 import 'package:portfolio/features/experience/presentation/widgets/experience_item_left_section.dart';
 import 'package:timeline_tile/timeline_tile.dart';
