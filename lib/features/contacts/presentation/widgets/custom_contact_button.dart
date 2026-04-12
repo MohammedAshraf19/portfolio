@@ -24,7 +24,7 @@ class CustomContactButton extends StatelessWidget {
           backgroundColor: AppColors.transportColor),
       onPressed: onTap,
       child: SizedBox(
-        width: 110,
+        width: 120,
         child: ListTile(
           contentPadding: const EdgeInsets.all(0),
           minVerticalPadding: 0,
