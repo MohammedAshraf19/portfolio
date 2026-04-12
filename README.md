@@ -12,18 +12,11 @@ This project showcases my journey as a Flutter Developer, including my skills, p
 
 ---
 
-## 📸 Preview
-
-<img src="assets/preview.png" alt="Portfolio Preview" width="100%"/>
-
----
-
 ## ✨ Features
 
 - ⚡ Responsive design (Mobile / Tablet / Desktop)
 - 🎨 Modern UI with smooth animations
 - 🧑‍💼 Experience timeline section
-- 🏆 Competitions & volunteer work section
 - 📂 Projects showcase with details
 - 📬 Contact form section
 - 🌙 Dark themed professional design
@@ -33,8 +26,8 @@ This project showcases my journey as a Flutter Developer, including my skills, p
 ## 🛠️ Built With
 
 - Flutter 💙  
-- Dart  
-- Firebase (if used)  
+- Dart
+- Lottie Animation
 - GitHub Pages (Hosting)  
 - Figma (UI Design)
 
