@@ -7,7 +7,7 @@ import 'package:portfolio/features/projects/models/project_model.dart';
 class PortfolioData {
   // User Data
   static const name = 'Mohammed Ashraf';
-  static const jobTitle = 'Mobile App Developer';
+  static const jobTitle = 'Flutter Developer';
   static const description =
       'I build real-world mobile applications using Flutter, focusing on clean architecture, performance, and scalable systems.';
   static const contactDescription =
@@ -36,13 +36,6 @@ class PortfolioData {
   // Projects Data
   static List<ProjectModel> projects = [
     ProjectModel(
-        link: 'https://github.com/MohammedAshraf19/NASA_Farmers',
-        image: ImageLinks.nasa,
-        name: 'NASA Farmers',
-        descriptio:
-            'mobile application developed to help farmers make data-driven decisions for better agricultural outcomes. Leveraging NASA Earth Observation Data, the app provides farmers with critical insights such as soil moisture, wind speed, and temperature to optimize crop selection and predict potential agricultural risks.',
-        tools: ['Figma', 'RESTful API', 'Cubit', 'Map', 'Animations']),
-    ProjectModel(
         link: 'https://github.com/MohammedAshraf19/Human_Activity_Recognition',
         image: ImageLinks.har,
         name: 'Human Activity Recognition',
@@ -57,6 +50,13 @@ class PortfolioData {
           'Map',
           'Responsive'
         ]),
+    ProjectModel(
+        link: 'https://github.com/MohammedAshraf19/NASA_Farmers',
+        image: ImageLinks.nasa,
+        name: 'NASA Farmers',
+        descriptio:
+            'mobile application developed to help farmers make data-driven decisions for better agricultural outcomes. Leveraging NASA Earth Observation Data, the app provides farmers with critical insights such as soil moisture, wind speed, and temperature to optimize crop selection and predict potential agricultural risks.',
+        tools: ['Figma', 'RESTful API', 'Cubit', 'Map', 'Animations']),
     ProjectModel(
         link: 'https://github.com/MohammedAshraf19/Book-App',
         image: ImageLinks.bookApp,
