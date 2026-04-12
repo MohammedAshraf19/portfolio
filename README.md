@@ -60,7 +60,7 @@ I enjoy turning complex problems into simple, user-friendly experiences.
 
 ## 📬 Contact Me
 
-- 💼 LinkedIn: [MA LinkedIn](www.linkedin.com/in/mohammed-ashraf-928619393)
+- 💼 LinkedIn: [MA LinkedIn](www.linkedin.com/in/mohammed-ashraf-928619393/)
 - 📧 Email: mohamedasharf55@gmail.com
 - 🌍 Portfolio: [MA Portfolio](https://mohammedashraf19.github.io/)
 
