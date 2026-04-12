@@ -8,7 +8,7 @@ This project showcases my journey as a Flutter Developer, including my skills, p
 
 ## 🌐 Live Demo
 
-🔗 https://mohammedashraf19.github.io/portfolio/
+🔗 [MA Portfolio](https://mohammedashraf19.github.io/)
 
 ---
 
@@ -62,7 +62,7 @@ I enjoy turning complex problems into simple, user-friendly experiences.
 
 - 💼 LinkedIn: [www.linkedin.com/in/mohammed-ashraf-928619393]
 - 📧 Email: mohamedasharf55@gmail.com
-- 🌍 Portfolio: https://mohammedashraf19.github.io/portfolio/
+- 🌍 Portfolio: [MA Portfolio](https://mohammedashraf19.github.io/)
 
 ---
 
