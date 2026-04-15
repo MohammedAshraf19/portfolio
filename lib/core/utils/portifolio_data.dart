@@ -92,7 +92,7 @@ class PortfolioData {
             '- Taught Programming to students aged 10–17, improving logical thinking and problem-solving skills.\n- Designed structured learning materials, coding exercises, and assessments.\n- Mentored teams in national and international competitions using Flutter and Python.\n- Led technical direction, system design, and implementation guidance./n- Achieved 1st place (Afro-Asian Software Competition) among 20+ teams.\n- Achieved 1st place (Technoxian Competition) among 30+ teams.',
         jobTitle: 'Programming Instructor & Mentor',
         companyName: 'Bright Brain Academy',
-        duration: 'Feb 2026-Present\nAug 2024-Mar 2025',
+        duration: 'Aug 2024-Present',
         location: '10th of Ramadan, Egypt',
         companyLogo: ImageLinks.academyLogo,
         photo: const []),
