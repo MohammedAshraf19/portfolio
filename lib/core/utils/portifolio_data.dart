@@ -20,7 +20,7 @@ class PortfolioData {
   static const gitHub = 'https://github.com/MohammedAshraf19';
   static const gmail = 'mohamedasharf55@gmail.com';
   static const resume =
-      'https://drive.google.com/file/d/12eKvy1z_7Kdk8OJ6A2AuiTuSZPyH6Jpd/view?usp=sharing';
+      'https://drive.google.com/file/d/1yzzz8LdOU4-A55wplr70f8TyHi8G0R5P/view?usp=sharing';
 
   // User Skills
   static final List<SkillItemModel> skills = [
