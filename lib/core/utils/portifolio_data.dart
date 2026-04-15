@@ -108,7 +108,7 @@ class PortfolioData {
     ExperienceItemModel(
         description:
             '- Designed a full curriculum covering Dart, OOP, Flutter, and problem-solving.\n- Trained and mentored 6+ members in building Flutter apps with APIs, Firebase, and local storage.\n- Led technical workshops on advanced Flutter concepts and real-world applications.\n- Achieved 90% completion rate, increasing engagement and practical skills.',
-        jobTitle: 'Head of Mobile App Track',
+        jobTitle: 'Mentor of Mobile App Track',
         companyName: 'IEEE-ZSB',
         duration: 'Nov 2022 - Nov 2023',
         location: 'Hybrid',
